@@ -1,4 +1,5 @@
 import random
+from random import randint
 
 
 def handle_response(message) -> str:
@@ -8,7 +9,7 @@ def handle_response(message) -> str:
 		return 'Hey there!'
 	
 	if p_message == 'roll':
-		return str(random.randInt(1, 6))
+		return str(random.randint(1, 6))
 	
 	if p_message == '!help':
 		return "`This is a help meassage that you can modify`"
